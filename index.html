@@ -6,33 +6,137 @@
     <title>Document</title>
 </head>
 <body>
-    <header>Aimee Seguin</header>
-    <hr>
-    <main>
-        <section>
-            <article>
-                <h1>About Me</h1>
-                <p>My name is <em>Aimee Seguin.</em> It is my first year at Algonquin College. I <em>initially</em> planned to take a 4 year program, Digital Marketing. It was cancelled <em>last minute</em> and I ended up having to choose another course. So here I am at <abbr style="color: green;" title="Interactive Media Design">IMD</abbr>! I am enjoying this course so far and it excites me to think that I am one step closer to my future. I am not sure where exactly I see myself working in the future, but I'd love to have a job where I can work remotely and be able to travel the world.</p>
+    <header>
+        <h1>Week 4 demo</h1>
+    </header>
 
-                <p>I still remember the time Covid-19 hit... Back when the pandemic started, I was in 6<sup>th</sup> grade. I ended up spending my 7<sup>th</sup> and 8<sup>th</sup> year in online school. I met a lot of friends during my 8<sup>th</sup> year. Unfortuntely, pretty much all of those friends did not go to the same school as me when we finished 8<sup>th</sup> grade. <strong><em>...Except for one.</em></strong> One person actually stuck with me, <em>4 years</em> after 8<sup>th</sup> grade, we finally got to meet in person at <abbr style="color: green;" title="Algonquin College">AC</abbr>! It is funny to me how we met each other online during middle school, and then finally got to see each other in person only after graduating high school.</p>
+    <main> 
+        <hr>
+        <section>
+            <h2>Forms</h2>
+            <article>
+                <form action="next.html" method="get"> <!--Get is an insecure method. (the other is "post") -->
+                    <label for="fname">Name</label>
+                    <input id="fname" type="text" name="firstname" placeholder="first name"> <!-- also type="color" type="password"-->
+
+                    <div> <!--bucket-->
+                        <label for="msg">Message</label> <br>
+                        <textarea name="message" id="msg"></textarea><!--textarea-->
+                    </div>
+
+                    <div>
+                        <label for="pgm">Program</label>
+                        <select name="message" id="pgm">
+                            <option value="imd">Interactive Media Design</option>
+                            <option value="gj">Graphic Design</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h3>What music?</h3>
+                        <label for="rock">Rock</label>
+                        <input type="checkbox" id="rock" name="rock">
+                        <br>
+                        <label for="pop">Pop</label>
+                        <input type="checkbox" id="pop" name="pop">
+                    </div>
+
+                    <div>
+                        <h3>Yes or No?</h3>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="choice">
+                        <br>
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="choice">
+                    </div>
+
+                    <div>
+                        <button type="submit">Send it</button>
+                    </div>
+                </form>
             </article>
         </section>
         
         <hr>
+
         <section>
+            <h2>Links</h2>
             <article>
-                <h1>Motivational Quote</h1>
-                <blockquote>
-                    <q>There is no book so bad...that it does not have something good in it.</q><br>
-                    <cite>- Miguel de Cervantes Saavedra, Don Quixote </cite>
-                </blockquote>  
+                <h3>External Link</h3>
+                <p><a href="https://google.com" target="_blank">Visit Google</a></p>
+                <p><a style="color:red;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Get a free cookie</a></p> <!--rickroll-->
+            </article> <!--article>h3*1--> 
+
+            <article>
+                <h3>Internal link</h3>
+                <p><a style="color:green;" href="next.html">Other Page</a></p>
+                <p><a style="color:green;" href="notes.html">Notes Page</a></p>
+            </article>
+
+            <article> <!--article>h3+p -->
+                <h3>On page link</h3>
+                <p><a href="#bottom">To the bottom &darr;</a></p>
             </article>
         </section>
-    </main>
+        
+        <hr>
+        
+        <section>
+            <h2>Table</h2>
+            <article>
+                <table>
+                    <caption>Student Info</caption>
+                    <thead> <!--it's table heads-->
+                        <tr> <!--table rows-->
+                            <th>Name</th>
+                            <th>Student ID</th>
+                            <th>Program</th>
+                        </tr>
+                    </thead>
+                        <tbody> <!--Table body-->
+                            <tr> <!--tr>td*3^ repeat -->
+                                <td>Aimee</td> <!--data cells-->
+                                <td>041287337</td>
+                                <td>IMD</td>
+                            </tr>
+                            <tr>
+                                <td>Mrs. Beeps</td>
+                                <td>067</td>
+                                <td>GD</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </article>
+        </section>
 
-    <hr>
-    <footer>
+        
+        <hr>
+        <section> <!--section>h2+article emmet short thing-->
+            <h2>Images</h2>
+                <article>
+                    <img width="500" src="images/mypicture.png" alt="Aimee Seguin" title="Aimee Seguin">
+                </article>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>Hobbies</h2>
+            <article>
+                <ul>
+                    <li>Video games</li>
+                    <li>Drawing</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+    </main>
+    
+    <footer id="bottom">
         <p>Copyright 2026</p>
     </footer>
+    <!--    <person class="student"></person>   -->
 </body>
 </html>

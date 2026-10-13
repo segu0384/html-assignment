@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="css/main.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Styling the HTML Website</title>
 </head>
 <body>
     <header>
-        <h1>Week 4 demo</h1>
+        <h1 class="site-title">Week 4 demo</h1>
     </header>
 
     <main> 
@@ -69,8 +70,10 @@
 
             <article>
                 <h3>Internal link</h3>
-                <p><a style="color:green;" href="next.html">Other Page</a></p>
-                <p><a style="color:green;" href="notes.html">Notes Page</a></p>
+                <nav>
+                    <p><a class="page-link" href="next.html">Other Page</a></p>
+                    <p><a class="page-link" href="notes.html">Notes Page</a></p>
+                </nav>
             </article>
 
             <article> <!--article>h3+p -->
@@ -114,7 +117,7 @@
         <section> <!--section>h2+article emmet short thing-->
             <h2>Images</h2>
                 <article>
-                    <img width="500" src="images/mypicture.png" alt="Aimee Seguin" title="Aimee Seguin">
+                    <img id="my-image" src="images/myimage.png" alt="Aimee Seguin" title="Aimee Seguin">
                 </article>
         </section>
         
@@ -123,9 +126,11 @@
         <section>
             <h2>Hobbies</h2>
             <article>
-                <ul>
+                <ul style="list-style-type:square;">
                     <li>Video games</li>
                     <li>Drawing</li>
+                    <li>Singing</li>
+                    <li>Cooking</li>
                 </ul>
             </article>
         </section>
